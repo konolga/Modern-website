@@ -7,7 +7,7 @@ COLOR SCHEME:
 
 DARK WINE:               #8E1F3F        (Buttons, icons, links, lines and background)
 YANKEES BLUE:            #14213D        (Headings)
-PLATINUM:                #E5E5E5        (Paragraphs)
+GRAY:                #41464b        (Paragraphs)
 WHITE:                   #FFFFFF        (Text with black backgrounds)
 REGISTRATED BLACK:       #000000        (Text)
 
@@ -377,7 +377,7 @@ h4.team-member-designation {
 *******************************/
 .social-list {
     padding: 10px 0 30px 0;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -400,6 +400,9 @@ h4.team-member-designation {
 
 .icon-gray i:hover {
     color: #8E1F3F;
+}
+.icon-white i{
+color: #fff;
 }
 
 /*****************************
@@ -560,4 +563,55 @@ ul.pricing-spec li p {
     text-transform: uppercase;
     font-weight: 300;
     margin-top: 0px;
+}
+
+/*****************************
+           CLIENTS
+*******************************/
+.client{
+    padding: 40px 0;
+}
+
+/*****************************
+           CONTACT
+*******************************/
+footer{
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid reg(0,0,0);
+}
+
+#contact-left h3, #contact-right h3{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p{
+    color: #fff;
+    margin-bottom: 27px;
+}
+
+#contact-info{
+    background-image: url("../img/world-map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+address{
+    color:#fff;
+}
+address strong, 
+#phone-fax-email strong{
+letter-spacing: 1px;
+}
+form .form-control{
+background: transparent;
+border-radius:0;
+border-color: #fff;
+font-size: 17px;
+font-weight: 300;
+padding: 8px 16px;
+margin-bottom: 20px;
+color: #fff;
 }

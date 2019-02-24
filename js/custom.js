@@ -93,3 +93,17 @@ $(function () {
         }, 1250, "easeInOutExpo"); //easy jquery
     });
 });
+
+/*==================================
+            CLIENTS
+==================================*/
+$(function () {
+
+    $("#clients-list").owlCarousel({
+        items: 6,
+        autoplay: true,
+        smartspeed: 700,
+        loop: true,
+        autoplayHoverPause: true
+    });
+});
