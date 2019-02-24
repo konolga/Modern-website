@@ -65,30 +65,31 @@ $(function () {
             NAVIGATION
 ==================================*/
 $(function () {
-//on scroll event
-$(window).scroll(function(){ 
-if ($(this).scrollTop()<50){
-//hide navigation bar
-$("nav").removeClass("res-top-nav");
-}else{
-//show navigation bar
-$("nav").addClass("res-top-nav");
-}
-});
+    //on scroll event
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 50) {
+            //hide navigation bar
+            $("nav").removeClass("res-top-nav");
+            $("#back-to-top").fadeOut();
+        } else {
+            //show navigation bar
+            $("nav").addClass("res-top-nav");
+            $("#back-to-top").fadeIn();
+        }
+    });
 
 });
 
 //smoothscrollig
-$(function(){
-$("a.nav-link").click(function(event){
-event.preventDefault();
+$(function () {
+    $("a.nav-link").click(function (event) {
+        event.preventDefault();
 
-//get /return id like #about, #work, #item etc.
-let section = $(this).attr("href");
+        //get /return id like #about, #work, #item etc.
+        let section = $(this).attr("href");
 
-$('html, body').animate(
-    {
-        scrollTop: $(section).offset().top -67
-    }, 1250, "easeInOutExpo"); //easy jquery
+        $('html, body').animate({
+            scrollTop: $(section).offset().top - 67
+        }, 1250, "easeInOutExpo"); //easy jquery
     });
 });

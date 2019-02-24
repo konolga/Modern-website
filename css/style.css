@@ -37,53 +37,65 @@ p {
     font-weight: 300;
     font-size: 16px;
 }
+
 /*****************************
             NAVIGATION
 *******************************/
-.navbar{
-  padding: 20px 0;
-  transition: all .5s ease-in-out;
+.navbar {
+    padding: 20px 0;
+    transition: all .5s ease-in-out;
 }
-.res-top-nav{
-    background: rgba(0, 0, 0, 0.7); /*transparent black*/
-    padding: 7px 0;  
-}
-.res-nav-wrapper{
-    padding: 0 85px ;  
-}
-.navbar-nav{
 
+.res-top-nav {
+    background: rgba(0, 0, 0, 0.7);
+    /*transparent black*/
+    padding: 7px 0;
 }
-.navbar-nav > li > a {
 
-font-size: 25px;
-text-transform: uppercase;
-font-weight: 700;
+.res-nav-wrapper {
+    padding: 0 85px;
 }
-.nav-link{
+
+.navbar-nav {}
+
+.navbar-nav>li>a {
+
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-link {
     color: #ffff;
 
 }
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
     background: none;
-    color:  #8E1F3F;
+    color: #8E1F3F;
 }
-.navbar-toggler{
-    background: rgba(0,0,0,0.1); /*transparent black*/
+
+.navbar-toggler {
+    background: rgba(0, 0, 0, 0.1);
+    /*transparent black*/
     border: 1px solid none
 }
-.navbar-toggler .icon-bar{
-background-color: #fff;
+
+.navbar-toggler .icon-bar {
+    background-color: #fff;
 }
-.navbar-collapse
-{
+
+.navbar-collapse {
     float: right;
-    max-height: none !important;/*ignore bootsrap css property*/
+    max-height: none !important;
+    /*ignore bootsrap css property*/
 }
 
 .nav-item .active {
-color: #8E1F3F;
+    color: #8E1F3F;
 }
+
 /*****************************
             HOME
 *******************************/
@@ -155,17 +167,26 @@ color: #8E1F3F;
 }
 
 
-.btn-yellow {
+.btn-red {
     border-color: #8E1F3F;
     color: #8E1F3F;
 }
 
-.btn-yellow:hover,
-.btn-yellow:focus {
+.btn-red:hover,
+.btn-red:focus {
     background-color: #8E1F3F;
     color: #fff;
 }
 
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
 
 /*****************************
             ANIMATE
