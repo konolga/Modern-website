@@ -101,6 +101,7 @@
         width: 100%;
 
     }
+
     #about .content-title h3 {
         text-align: center;
     }
@@ -109,6 +110,7 @@
         margin: 0 auto 30px auto;
 
     }
+
     /* Home*/
     #home-heading h3 {
         font-size: 25px;
@@ -169,23 +171,24 @@
         font-size: 18px;
     }
 
-     /* Services*/
-     .service-item-icon i{
+    /* Services*/
+    .service-item-icon i {
         width: 30px;
         height: 30px;
         padding: 7px;
     }
-    .service-item-desc p{
+
+    .service-item-desc p {
         padding-left: 5px;
         padding-top: 35px;
     }
 
-      /* Testimonials*/
-      .testimonial img {
-       max-width: 80px;
+    /* Testimonials*/
+    .testimonial img {
+        max-width: 80px;
     }
 
-      .testimonial blockquote {
+    .testimonial blockquote {
         padding: 6px 30px;
     }
 
@@ -203,8 +206,8 @@
         font-size: 12px;
     }
 
-       /* Buttons*/
-       .btn-general {
+    /* Buttons*/
+    .btn-general {
         padding: 0px;
         font-size: 14px;
     }

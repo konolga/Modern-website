@@ -43,6 +43,8 @@ p {
 *******************************/
 .navbar {
     padding: 20px 0;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 
@@ -65,7 +67,7 @@ p {
 }
 
 .nav-link {
-    color: #ffff;
+    color: #fff;
 
 }
 
@@ -83,11 +85,12 @@ p {
     width: 60px;
 }
 
-.icon-bar {
+.icon-bar{
+    display: block;
     background-color: #8E1F3F;
     height: 3px;
     margin: 6px;
-   
+
 
 }
 
@@ -192,8 +195,9 @@ p {
     border-radius: 0;
     display: none;
 }
-#about-btn{
-    position:relative;
+
+#about-btn {
+    position: relative;
     left: 40%
 }
 
@@ -202,19 +206,23 @@ p {
 *******************************/
 #home-cover,
 #home-heading {
-    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
 }
 
 #home-cover {
-    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
 }
 
 #home-heading {
-    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
 }
 
 #home-btn {
-    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
 }
 
 
@@ -231,7 +239,7 @@ p {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    margin: 0 0 30 0;
+    margin: 0 0 30px 0;
 }
 
 .content-title-underline {
@@ -285,13 +293,14 @@ p {
 /*****************************
             ABOUT
 *******************************/
-#about{
+#about {
     margin: 0;
 }
+
 #about-content-box {
     float: left;
     height: 700px;
-    
+
 }
 
 #about-content-box-outer {
@@ -341,12 +350,19 @@ p {
 }
 
 .img-wrapper img {
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
     transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
     width: 100%
 }
 
 .img-wrapper img:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    cursor: -webkit-zoom-in;
     cursor: zoom-in;
 }
 
@@ -388,7 +404,7 @@ h4.team-member-designation {
 *******************************/
 .social-list {
     padding: 10px 0 30px 0;
-    text-align: center;
+
 
 }
 
@@ -586,7 +602,8 @@ ul.pricing-spec li p {
 footer {
     background-color: #41464b;
     padding-top: 30px;
-    border-top: 5px solid reg(0, 0, 0);
+    border-top: 5px solid;
+    border-top-color: transparent;
 }
 
 #contact-left h3,
