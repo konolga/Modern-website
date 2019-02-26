@@ -31,7 +31,20 @@ $(function () {
         autoplay: true,
         smartspeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            480: {
+                items: 2
+            },
+            768: {
+                items: 3
+            }
+
+        }
     });
 });
 
@@ -93,7 +106,12 @@ $(function () {
         }, 1250, "easeInOutExpo"); //easy jquery
     });
 });
-
+//cloase mobile menu on click
+$(function () {
+    $(".navbar-collapse ul li a").on("click touch", function () {
+        $(".navbar-toggler").click();
+    })
+})
 /*==================================
             CLIENTS
 ==================================*/
@@ -104,6 +122,23 @@ $(function () {
         autoplay: true,
         smartspeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            480: {
+                items: 3
+            },
+            768: {
+                items: 5
+            },
+            992: {
+                items: 6
+            }
+
+        }
+
     });
 });
